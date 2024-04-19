@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Counter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Temprature conversion</title>
 </head>
 <body>
 
-    <label id="countLabel">0</label><br>
+    <form>
+        <h1> Temprature:</h1>
+        <input type="number" id="textbox" value="0"><br>
+        <input type="radio" id="tofahran" name="unit">
+        <label for="tofahran">Clesius -> Fahrenheit</label>
+        <br>
+        <input type="radio" id="tocelsius" name="unit">
+        <label for="tocelsius">Fahrenheit -> Celsius</label>
+        <br>
+        <button type="submit">Submit</button>
 
-    <div id="buttoncontainer">
-    <button id="decrease" class="button">decrease</button>
-    <button id="reset" class="button">reset</button>
-    <button id="increase" class="button">increase</button>
-        </div>
-
-
-<script src="index.js"></script>
+    </form>
 </body>
 </html>
